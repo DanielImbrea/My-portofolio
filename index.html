@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+<div class="background">
+<div class="nav">
+    <a class="a active" href="#">Acasa</a>
+    <a class="b"href="#">Despre mine</a>
+    <a class="c"href="#">Galerie</a>
+    <a class="d"href="#">Contact</a>
+    </div>
+<div class="content">
+<div class="home">
+    <h1>I'm Dani</h1>
+    <h3>Graphic Designer</h3>
+</div>
+<div class="aboutus">
+    <p><b>Salut prieteni</b>, <br>Bine ati venit pe micul meu proiect.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quaerat praesentium autem recusandae quo alias, fugit porro quis, fuga possimus explicabo amet enim libero corporis! Excepturi maiores cum veritatis dolor. <br>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque quod soluta, voluptatum nisi itaque tenetur placeat quidem consequatur ad, eum odit magni, dolorum laudantium exercitationem aut vitae veritatis porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore consequuntur tenetur, quia ullam numquam eius hic quam harum incidunt veritatis commodi repellat, similique maiores facere fugit officiis sint voluptas.</p>
+</div>
+<div class="gallery">
+    
+    <div class="image">
+        <img src="imagini/da1.jpg">
+    </div>
+    <div class="image1">
+        <img src="imagini/da2.jpg" width="170px">
+    </div>
+    <div class="image">
+        <img src="imagini/da3.jpg">
+    </div>
+    <div class="image">
+        <img src="imagini/da4.jpg">
+    </div>
+    <div class="image">
+        <img src="imagini/da5.jpg">
+    </div>
+    <div class="image">
+        <img src="imagini/da6.jpg">
+    </div>
+    <div class="image">
+        <img src="imagini/da7.jpg">
+    </div>
+    <div class="image">
+        <img src="imagini/da8.jpg" 
+    </div>
+    </div>
+    
+</div>
+<div class="contactus">
+    <div class="contactform">
+    <form action="index.html" method="post">
+        <input type="text" name=""class="inputtext" value="First Name">
+        <input type="text" name=""class="inputtext"  value="Last Name">
+        <input type="text" name=""class="inputtext"  value="Your Email">
+        <textarea cols="4" rows="6"class="inputmessage">Mesajul tau</textarea>
+        <input type="button" name="" class="submitbutton" value="Submit">
+    </form>
+       
+    
+    
+
+   
+    
+
+
+
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('a').click(function(){
+        //alert("i am a clicker");
+        var selected= $(this);
+        $('a').removeClass('active');
+        $('selected').addClass('active');
+    });
+    var $a = $('.a'),
+    $b=$('.b'),
+    $c=$('.c'),
+    $d=$('.d'),
+    $home=$('.home'),
+    $aboutus=$(".aboutus"),
+    $gallery=$('.gallery'),
+    $contactus=$('.contactus');
+
+    $a.click(function(){
+        $home.fadeIn();
+        $aboutus.fadeOut();
+        $gallery.fadeOut();
+        $contactus.fadeOut();
+    });
+    $b.click(function(){
+        $aboutus.fadeIn();
+        $home.fadeOut();
+        $gallery.fadeOut();
+        $contactus.fadeOut();
+    });
+
+        $c.click(function(){
+        $gallery.fadeIn();
+        $home.fadeOut();
+        $aboutus.fadeOut();
+        $contactus.fadeOut();
+    });
+    $d.click(function(){
+        $contactus.fadeIn();
+        $aboutus.fadeOut();
+        $gallery.fadeOut();
+        $aboutus.fadeOut();
+        
+    });
+});
+</script>
+
+    </body>
+
+
+</html>
